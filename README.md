@@ -5,7 +5,10 @@
 2. Requires Madgraph: [MG5](https://launchpad.net/mg5amcnlo)
 3. Save this folder under Madgraph Directory to implement the search
 4. To start the scan the user needs to run "run.sh" from terminal from the Madgraph_Search directory
-![Signal Production](Resources/workflow_cphy.drawio.png)
+5. All instructions consolidated in shell script to facilitate job submissions on cluster
+
+
+![Workflow](Resources/workflow_cphy.drawio.png)
 
 ## Introduction to the hypothesis
 The Lagrangian for the hypotheses is given by
@@ -16,7 +19,11 @@ where $y_X$, $y_Y$ and $g'$ are the parameters to be estimated from the benchmar
 
 This model corresponds to a typical BSM hypothesis where traditional one-dimensional scans based on variables such as MET are not as effective as using all the kinematic information in an event. The final state of interest has an electron-positron pair with missing transverse energy.
 
-![Signal Production](Resources/sig-test.pdf)
+![Signal Production](Resources/sig-test.png)
+
+The same final state is achieved in the Standard Model with neutrinos carrying the MET.
+
+![SM Production](Resources/bg-test.png)
 
 ## Neural Network Analysis
 DNNs are implemented as binary classifiers. They are trained to discriminate between signal for a particular choice of parameters and the background. The DNNs are fully connected and use ReLu in the hidden layers, sigmoid in the output layer. 
