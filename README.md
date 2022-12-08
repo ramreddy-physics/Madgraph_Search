@@ -19,11 +19,11 @@ where $y_X$, $y_Y$ and $g'$ are the parameters to be estimated from the benchmar
 
 This model corresponds to a typical BSM hypothesis where traditional one-dimensional scans based on variables such as MET are not as effective as using all the kinematic information in an event. The final state of interest has an electron-positron pair with missing transverse energy.
 
-![Signal Production](Resources/sig-test.png =25x25)
+![Signal Production](Resources/sig-test.png)
 
 The same final state is achieved in the Standard Model with neutrinos carrying the MET.
 
-![SM Production](Resources/bg-test.png =25x25)
+![SM Production](Resources/bg-test.png)
 
 ## Neural Network Analysis
 DNNs are implemented as binary classifiers. They are trained to discriminate between signal for a particular choice of parameters and the background. The DNNs are fully connected and use ReLu in the hidden layers, sigmoid in the output layer. 
