@@ -32,14 +32,14 @@ $$ f^*(x) = \frac{p_{A}(x)}{p_{A}(x) + p_{B}(x)} $$
 For a given choice of parameters $\theta$, there are two hypotheses:
 
 1. Signal Hypothesis: There are S signal events and B background events in the data-set:
-        
-        $$ p(x|\theta, \mu) = \mu p_{sig}(x|\theta) + (1 - \mu) p_{bg}(x) $$
+
+$$ p(x|\theta, \mu) = \mu p_{sig}(x|\theta) + (1 - \mu) p_{bg}(x) $$
  
  where, $\mu = S/(S + B)$ is also a parameter to be estimated.
 
 2. Null Hypothesis:
        
-       $$  p_0(x) = p_{bg}(x) $$
+$$  p_0(x) = p_{bg}(x) $$
     
 If a DNN is trained to classify between signal and background classes, using Equation 3, the output of the network $f(x|\theta)$ can be used to obtain:
 
