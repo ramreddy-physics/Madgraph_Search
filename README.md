@@ -9,6 +9,7 @@
 
 ## Introduction to the hypothesis
 The Lagrangian for the hypotheses is given by
+
 $$  \mathcal{L} = \mathcal{L}_{SM} + y_X H \bar{X}{X} + y_Y H \bar{Y}{Y} + \frac{g'g_W}{2\sqrt{2}}\bar{X}{W}^{-}Y + h.c. $$
 
 where $y_X$, $y_Y$ and $g'$ are the parameters to be estimated from the benchmark dataset.  Typically such a multi-dimensional scan must be run on a cluster, due to the computational cost. As a proof of concept, this code searches for the parameter $y_X (M_X)$.
