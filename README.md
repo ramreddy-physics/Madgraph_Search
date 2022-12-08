@@ -24,7 +24,8 @@ Binary-CrossEntropy is chosen as the loss function:
 $$BCE[f] = -\int dx \left[p_{A}(x)\log{f(x)} + p_{B}(x)\log{(1-f(x))}\right]$$
 
 Analytically, it can be seen that, the function that minimizes the BCE is given by:
-        $$ f^*(x) = \frac{p_{A}(x)}{p_{A}(x) + p_{B}(x)} $$
+
+$$ f^*(x) = \frac{p_{A}(x)}{p_{A}(x) + p_{B}(x)} $$
 
 ## Bayesian Analysis (MLE)
 
