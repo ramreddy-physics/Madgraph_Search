@@ -3,4 +3,4 @@ generate p p > x+ x- ,(x+ > e+ ve y~), (x- > e- ve~ y)
 output signal_generations
 launch signal_generations
   set nevents 100000
-  set MASS 5000001 scan:[120 + 10*i for i in range(20)]
+  set MASS 5000001 scan:[120 + 10*i for i in range(25)]
